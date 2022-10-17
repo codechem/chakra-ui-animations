@@ -1,0 +1,45 @@
+{
+  "name": "chakra-animations",
+  "version": "1.0.0",
+  "description": "Pre-built animations for Chakra UI",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --config tsup.config.ts",
+    "dev": "tsup src/index.ts --config tsup.config.ts --watch",
+    "lint": "TIMING=1 eslint src/**/*.ts* --fix",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "keywords": [
+    "react",
+    "chakra-ui",
+    "animation"
+  ],
+  "author": "Andrej Acevski",
+  "license": "MIT",
+  "peerDependencies": {
+    "@chakra-ui/react": ">=2.0.0",
+    "@chakra-ui/system": ">=2.0.0",
+    "@emotion/react": ">=11.0.0",
+    "@emotion/styled": ">=11.0.0",
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@chakra-ui/react": "latest",
+    "@chakra-ui/system": "latest",
+    "@changesets/changelog-github": "^0.4.3",
+    "@changesets/cli": "^2.21.1",
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@types/node": "^18.11.0",
+    "@types/react": "latest",
+    "react": "latest",
+    "ts-node": "^10.7.0",
+    "tsup": "^6.1.2",
+    "typescript": "^4.6.2"
+  }
+}
