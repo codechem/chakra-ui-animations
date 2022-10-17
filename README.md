@@ -1,5 +1,7 @@
 # Chakra Animations
 
+Chakra Animations is a dependancy which offers you pre-built animations for your Chakra UI components.
+
 ## Installation
 
 ```sh

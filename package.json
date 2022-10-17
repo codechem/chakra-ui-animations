@@ -1,6 +1,6 @@
 {
   "name": "@codechem/chakra-animations",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Pre-built animations for Chakra UI",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
