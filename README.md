@@ -3,16 +3,6 @@
 ## Installation
 
 ```sh
-yarn add @nikolovlazar/chakra-ui-prose
-
-# or
-
-npm i @nikolovlazar/chakra-ui-prose
-```# Chakra Animations
-
-## Installation
-
-```sh
 yarn add @codechem/chakra-animations
 
 # or
