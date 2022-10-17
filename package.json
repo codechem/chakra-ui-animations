@@ -11,7 +11,7 @@
   "scripts": {
     "build": "tsup src/index.ts --config tsup.config.ts",
     "dev": "tsup src/index.ts --config tsup.config.ts --watch",
-    "lint": "TIMING=1 eslint src/**/*.ts* --fix",
+    "lint": "eslint src/**/*.ts* --fix",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "keywords": [
@@ -37,9 +37,15 @@
     "@emotion/styled": "latest",
     "@types/node": "^18.11.0",
     "@types/react": "latest",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
     "react": "latest",
     "ts-node": "^10.7.0",
     "tsup": "^6.1.2",
-    "typescript": "^4.6.2"
+    "typescript": "*"
   }
 }

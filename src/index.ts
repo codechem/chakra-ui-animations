@@ -1,3 +1,3 @@
-export * from './animations';
+export * from './animations'
 
-export { useAnimation } from './animations';
+export { useAnimation } from './animations'
