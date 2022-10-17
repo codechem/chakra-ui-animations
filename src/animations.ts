@@ -7,7 +7,7 @@ import Options from './types/options'
 export const useAnimation = (
   name: Name = 'bounce', 
   { 
-    duration = 1, 
+    duration = 1000, 
     iterationCount = 'infinite', 
     timingFunction = 'ease-in' 
   }: Options): string | undefined => {
