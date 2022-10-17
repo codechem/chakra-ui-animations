@@ -1,5 +1,5 @@
 {
-  "name": "chakra-animations",
+  "name": "@codechem/chakra-animations",
   "version": "1.0.0",
   "description": "Pre-built animations for Chakra UI",
   "main": "./dist/index.js",
@@ -8,12 +8,17 @@
   "files": [
     "dist"
   ],
-  "scripts": {
-    "build": "tsup src/index.ts --config tsup.config.ts",
-    "dev": "tsup src/index.ts --config tsup.config.ts --watch",
-    "lint": "eslint src/**/*.ts* --fix",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  "publishConfig": {
+    "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codechem/chakra-animations.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codechem/chakra-animations/issues"
+  },
+  "homepage": "https://github.com/codechem/chakra-animations#readme",
   "keywords": [
     "react",
     "chakra-ui",
@@ -21,6 +26,12 @@
   ],
   "author": "Andrej Acevski",
   "license": "MIT",
+  "scripts": {
+    "build": "tsup src/index.ts --config tsup.config.ts",
+    "dev": "tsup src/index.ts --config tsup.config.ts --watch",
+    "lint": "eslint src/**/*.ts* --fix",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
   "peerDependencies": {
     "@chakra-ui/react": ">=2.0.0",
     "@chakra-ui/system": ">=2.0.0",
