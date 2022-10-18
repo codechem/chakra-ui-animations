@@ -1,16 +1,17 @@
-name: Publish Package
+name: Pull Request Workflow
 
 on:
-  push:
+  pull_request:
+    types: [opened, synchronize]
     branches:
       - main
 
 jobs:
   build:
-    name: Build, Lint and Publish
+    name: Build, Lint, and release to @dev
     runs-on: ubuntu-latest
 
-    steps:
+     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
@@ -31,7 +32,6 @@ jobs:
         shell: bash
         run: |
           echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
-
       - uses: actions/cache@v3
         name: Setup pnpm cache
         with:
@@ -39,7 +39,6 @@ jobs:
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
-
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
 
@@ -57,12 +56,11 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Create release Pull Request or publish to NPM
-        id: changesets
-        uses: changesets/action@v1
-        with:
-          publish: pnpm run release
-          commit: 'ci(changesets): version packages'
+      - name: Release to @dev tag
+        if: steps.changesets.outputs.published != 'true'
+        run: |
+          pnpm changeset version --snapshot dev
+          pnpm changeset publish --tag dev
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
