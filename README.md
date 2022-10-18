@@ -50,7 +50,7 @@ The first parameter in the `useAnimation` hook is the animation name, this is th
 - rotate-scale
 - rubber-band
 - shake-x
-- shake-y'
+- shake-y
 - shake
 - swing
 - tada
