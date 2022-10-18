@@ -1,20 +1,20 @@
-# Chakra Animations
+# Chakra UI Animations
 
-Chakra Animations is a dependancy which offers you pre-built animations for your Chakra UI components.
+Chakra UI Animations is a dependancy which offers you pre-built animations for your Chakra UI components.
 
 ## Installation
 
 ```sh
-yarn add @codechem/chakra-animations
+yarn add @codechem/chakra-ui-animations
 
 # or
 
-npm i @codechem/chakra-animations
+npm i @codechem/chakra-ui-animations
 ```
 
 ## Usage
 ```typescript
-import { useAnimation } from '@codechem/chakra-animations';
+import { useAnimation } from '@codechem/chakra-ui-animations';
 function App() {
     const animation = useAnimation('flip', { duration: 2000, iterationCount: 'infinite' });
 
