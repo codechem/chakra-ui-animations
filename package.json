@@ -1,7 +1,7 @@
 {
   "name": "@codechem/chakra-ui-animations",
   "version": "1.0.0",
-  "description": "Pre-built animations for Chakra UI",
+  "description": "Chakra UI Animations is a dependancy which offers you pre-built animations for your Chakra UI components.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codechem/chakra-animations.git"
+    "url": "git+https://github.com/codechem/chakra-ui-animations.git"
   },
   "bugs": {
-    "url": "https://github.com/codechem/chakra-animations/issues"
+    "url": "https://github.com/codechem/chakra-ui-animations/issues"
   },
-  "homepage": "https://github.com/codechem/chakra-animations#readme",
+  "homepage": "https://github.com/codechem/chakra-ui-animations#readme",
   "keywords": [
     "react",
     "chakra-ui",
