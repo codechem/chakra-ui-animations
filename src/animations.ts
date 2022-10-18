@@ -5,11 +5,11 @@ import Name from './types/name'
 import Options from './types/options'
 
 export const useAnimation = (
-  name: Name = 'bounce', 
-  { 
-    duration = 1000, 
-    iterationCount = 'infinite', 
-    timingFunction = 'ease-in' 
+  name: Name = 'bounce',
+  {
+    duration = 1000,
+    iterationCount = 'infinite',
+    timingFunction = 'ease-in'
   }: Options): string | undefined => {
   const prefersReducedMotion = usePrefersReducedMotion()
   const animation = animationCollection[name]
