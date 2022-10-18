@@ -1,6 +1,6 @@
 {
-  "name": "@codechem/chakra-animations",
-  "version": "1.1.0",
+  "name": "@codechem/chakra-ui-animations",
+  "version": "1.0.1",
   "description": "Pre-built animations for Chakra UI",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -57,6 +57,6 @@
     "react": "latest",
     "ts-node": "^10.7.0",
     "tsup": "^6.1.2",
-    "typescript": "*"
+    "typescript": "^4.6.2"
   }
 }
