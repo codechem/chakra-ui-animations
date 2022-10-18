@@ -1,5 +1,5 @@
-import animationCollection from "../constants/animation-collection";
+import animationCollection from '../constants/animation-collection'
 
-type Name = keyof typeof animationCollection;
+type Name = keyof typeof animationCollection
 
-export default Name;
+export default Name
