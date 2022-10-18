@@ -30,7 +30,7 @@
     "build": "tsup src/index.ts --config tsup.config.ts",
     "dev": "tsup src/index.ts --config tsup.config.ts --watch",
     "lint": "eslint src/**/*.ts* --fix",
-    "release": "cleanset publish"
+    "release": "changeset publish"
   },
   "peerDependencies": {
     "@chakra-ui/react": ">=2.0.0",
